@@ -9,6 +9,16 @@
 					<li><a href="#">Home    </a></li>
 					<li><a href="#">Programs</a></li>
 					<li><a href="#">Events  </a></li>
+					<div class="dropdown">
+						<button class="dropdownbtn" onclick="myFunction()" >Dropdown</button>
+						<div class="dropdown-content" id="myDropdown">
+							<a href="#">Link 1</a>
+							<a href="#">Link 1</a>
+							<a href="#">Link 1</a>
+							<a href="#">Link 1</a>
+							<a href="#">Link 1</a>
+						</div>
+					</div>
 					<li><a href="#">Campaigns</a></li>
 					<li><a href="#">Donars   </a></li>
 				</ul>
@@ -25,6 +35,19 @@
 		</div>
 	</header>
 	<body>
+		<script>
+			function myFunction(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+		
+			window.onclick = function(e){
+				if(!e.target.matches("dropdownbtn")){
+					var myDropdown = window.getElementById("myDropdown");
+					if(myDropdown.classList.contains("show")){
+						myDropdown.classList.remove("show");
+					}
+				}
+			}	
+		</script>
 	</body>
-
 </html>
