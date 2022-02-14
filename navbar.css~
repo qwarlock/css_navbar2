@@ -45,3 +45,33 @@ a:hover{
 	background-color: darkgray;
 
 }
+li.active > a {
+	background-color: darkgrey;
+}
+
+.dropdown-content{
+	position: absolute;
+	display: none;
+	z-index: 1;
+}
+
+.dropdown-content a{
+	display: block;
+
+}
+
+button{
+	display: inline-block;
+	border: none;
+	outline: none;
+	height: 60px;
+	width: 80px;
+}
+
+.show{
+	display: block;
+}
+
+a:hover, dropdown:hover .dropdownbtn, .dropdownbtn:focus, .dropdown-content > a {
+	background-color: red;
+}
